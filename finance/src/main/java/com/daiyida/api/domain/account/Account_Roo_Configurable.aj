@@ -7,7 +7,7 @@ import com.daiyida.api.domain.account.Account;
 import org.springframework.beans.factory.annotation.Configurable;
 
 privileged aspect Account_Roo_Configurable {
-    
-    declare @type: Account: @Configurable;
-    
+
+	declare @type: Account: @Configurable;
+
 }
