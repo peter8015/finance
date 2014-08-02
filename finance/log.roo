@@ -1,0 +1,249 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-02 15:04:36
+project --topLevelPackage com.daiyida.api
+jpa setup --provider HIBERNATE --database MYSQL
+entity jpa --class ~.entity.Production --testAutomatically 
+field string --fieldName name --notNull
+field string --fieldName description --sizeMax 512
+perform test
+perform test
+jpa setup --databaseName dyd_credit --database MYSQL --provider HIBERNATE --userName root --password 123456
+perform test
+perform test -X
+perform test
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-02 16:04:36
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-02 16:05:20
+perform test
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-02 16:06:00
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-02 16:06:05
+perform test
+perform clean
+perform tests
+perform package
+web mvc setup
+security setup
+focus --class ~.entity.Production
+web mvc scaffold --class ~.web.ProductionController
+service type --interface ~.entity.ProductionService --entity ~.entity.Production
+web mvc scaffold --class ~.web.ProductionController
+perform tests
+perform tests
+perform eclipse
+perform package
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-02 16:36:14
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-02 17:09:30
+service type --interface ~.service.production.ProductionService --entity ~.entity.Production
+web mvc all --package ~.web
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-03 09:24:08
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-03 09:24:52
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-03 16:34:57
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-03 17:53:18
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-03 18:00:21
+entity jpa --class ~.domain.resouce.Resource --testAutomatically 
+hint
+field string --fieldName name --notNull 
+field string --fieldName url --notNull 
+hint field
+hint
+field number --type java.lang.Integer --fieldName sortNumber
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-03 18:43:24
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-04 09:04:48
+service type --entity ~.domain.resource.Resource --interface ~.service.Resource
+web mvc scaffold --class ~.web.resource.ResourceController --backingType ~.domain.resouce.Resource
+// [failed] entity jpa --class ~.domain.role.Role --testAutomatically
+// [failed] entity jpa --class ~.domain.role.Role --table roles --testAutomatically
+entity jpa --class ~.domain.role.Roles --testAutomatically 
+// [failed] entity jpa --class ~.domain.user.User --testAutomatically
+entity jpa --class ~.domain.user.Users --testAutomatically
+field string --fieldName loginName --notNull --sizeMax 45
+field string --fieldName email --notNull --sizeMax 45
+field string --fieldName password --notNull
+field string --fieldName userName --notNull --sizeMax 45
+field string --fieldName city --notNull --sizeMax 45
+// [failed] field string --fieldName city --notNull --sizeMax 45
+field string --fieldName fundAccount --notNull
+field set --fieldName roles --type ~.domain.role.Roles
+web mvc scaffold --class ~.domain.user.UserController
+perform tests
+perform tests
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-04 18:21:58
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-04 18:22:05
+perform tests
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-04 18:26:50
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-04 18:26:54
+web mvc scaffold --backingType ~.domain.role.Roles --class ~.web.role.RoleController
+perform tests
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-04 18:34:11
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-04 18:34:16
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-07 09:17:08
+perform tests
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-07 09:26:50
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-07 09:26:55
+web mvc scaffold --backingType ~.domain.role.Roles --class ~.web.role.roleRoleController
+web mvc scaffold --backingType ~.domain.role.Roles --class ~.web.role.roleRoleController
+web mvc scaffold --backingType ~.domain.role.Roles --class ~.web.role.RolesController
+web mvc scaffold --backingType ~.domain.role.Roles --class ~.web.RolesController
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-07 09:43:57
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-07 09:44:02
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-07 10:02:44
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-07 10:02:50
+web mvc controller --class ~.web.production.ProductionController
+web mvc scaffold --backingType ~.domain.production.Production --class ~.web.production.ProductionController
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-07 13:56:50
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-07 16:57:03
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-07 17:25:33
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-07 17:29:59
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-07 17:31:51
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-07 17:31:55
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-07 17:56:12
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-07 17:56:17
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-07 17:58:53
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-07 18:01:59
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-07 18:03:17
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-07 18:03:21
+entity jpa --class ~.domain.resource.Resource --testAutomatically
+field string --fieldName name --notNull 
+field string --fieldName url --notNull
+web mvc scaffold --class ~.web.resource.ResourceController --backingType ~.domain.resource.Resource
+focus --class ~.domain.role.Roles
+field set --fieldName resources --type ~.domain.resource.Resource
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-07 18:36:53
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-08 09:52:58
+service type --entity ~.domain.role.Roles --interface ~.service.role.RoleService
+service type --entity ~.domain.user.Users --interface ~.service.user.UserService
+service type --entity ~.domain.resource.Resource --interface ~.service.ResourceService
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-08 17:50:19
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-08 17:50:24
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-09 09:30:38
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-09 09:41:03
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-09 09:41:08
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-09 14:52:22
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-09 14:52:28
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-09 14:55:42
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-09 14:55:47
+perform tests
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-09 15:31:46
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-09 15:31:50
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-10 17:40:21
+perform clean
+perform package
+perform eclipse
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-15 15:41:48
+perform package
+perform tests
+perform package
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-17 16:28:09
+json all
+web mvc json all
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-17 16:47:53
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-22 16:07:22
+perform clean
+perform package
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-22 16:20:17
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-22 16:21:18
+perform eclipse
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-23 10:01:41
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-24 09:45:30
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-24 09:47:39
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-24 09:47:44
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-24 09:51:09
+perform eclipse
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-24 09:16:10
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-24 16:53:04
+entity jpa --class ~.domain.capitalAccount.capitalAccount --testAutomatically
+entity jpa --class ~.com.daiyida.api.domain.capitalAccount.capitalAccount --testAutomatically
+entity jpa --class com.daiyida.api.domain.capitalAccount.capitalAccount --testAutomatically
+field string --fieldName  password --notNull
+field set --fieldName t_user_uuid --type com.daiyida.api.domain.user.User
+field reference --fieldName t_user_uuid --type com.daiyida.api.domain.user.User
+perform test
+// [failed] selenium test --controller com.daiyida.api.web.capital.capitalAccountController
+repository jpa --interface com.daiyida.api.service.capital.capitalAccountService --entity com.daiyida.api.domain.capitalaccount.CapitalAccount
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-24 17:19:28
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-24 17:19:34
+perform tests
+help
+perform eclipse
+// [failed] selenium test --controller com.daiyida.api.web.capitalAccount.CapitalAccount
+backup
+help
+interface --class com.daiyida.api.service
+help
+// [failed] controller scaffold --class com.daiyida.api.web.capital.capitalAccount --entity com.daiyida.api.domain.capitalaccount.CapitalAccount
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-24 18:19:44
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-25 09:15:31
+service type --entity com.daiyida.api.domain.capitalaccount.CapitalAccount --interface com.daiyida.api.service.capitalAccount.acpitalAccountService
+web mvc scaffold --class com.daiyida.api.web.capitalAccount.capitalAccountController --backingType com.daiyida.api.domain.capitalaccount.CapitalAccount
+entity jpa --class com.daiyida.api.domain.bankCard --testAutomatically 
+field string --fieldName realName --notNull 
+field string --fieldName cardNo --notNull --sizeMax 45 
+service type --entity com.daiyida.api.domain.bankCard.BankCard --interface com.daiyida.api.service.bankCard.BankCardService 
+perform tests
+perform eclipse
+perform tests
+perform eclipse
+perform tests
+perform tests
+perform tests
+entity jpa --class com.daiyida.api.domain.bankCard.BankCard --testAutomatically 
+service type --entity com.daiyida.api.domain.bankCard.BankCard --interface com.daiyida.api.service.bankCard.BankCardService 
+web mvc scaffold --class com.daiyida.api.web.bankCard.BankCardController --backingType com.daiyida.api.domain.bankcard.BankCard
+field date --fieldName bindTime --type java.util.date --class com.daiyida.api.domain.bankcard.BankCard
+perform eclipse
+perform tests
+help
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-25 10:31:54
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-25 10:32:00
+entity jpa --class ~.domain.customer.Customer --table t_customer --identifierField uuid --identifierType java.lang.String --testAutomatically 
+entity jpa --class com.daiyida.api.domain.customer.Customer --table t_customer --identifierField uuid --identifierType java.lang.String --testAutomatically 
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-25 10:44:25
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-25 10:44:31
+// [failed] field string --fieldName userUUID --class com.daiyida.api.customer.Customer --notNull 
+// [failed] field string --fieldName userUUID --class com.daiyida.api.customer.Customer --notNull 
+perform eclipse
+field string --fieldName idCard --class com.daiyida.api.domain.customer.Customer --notNull 
+field string --fieldName name --class com.daiyida.api.domain.customer.Customer --notNull --sizeMax 500
+field date --fieldName birthday --class com.daiyida.api.domain.customer.Customer --type java.util.Date
+field number --fieldName sex --class com.daiyida.api.domain.customer.Customer --type int
+field date --fieldName createTime --class com.daiyida.api.domain.customer.Customer --type java.util.Date
+field date --fieldName modifyTime --class com.daiyida.api.domain.customer.Customer --type java.util.Date
+perform tests
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-25 13:12:43
+exit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-25 18:25:14
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-28 15:42:58
+q
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-28 19:01:27

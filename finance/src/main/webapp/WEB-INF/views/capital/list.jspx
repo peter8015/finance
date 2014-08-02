@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_daiyida_api_domain_capital_Capital" items="${capitals}" z="dlo9ayxITX6jBGj1VtsHoeJXHAQ=">
+        <table:table data="${capitals}" id="l_com_daiyida_api_domain_capital_Capital" path="/capital" z="JevuB3z1a4N3I3vsQEH89RMFy8o=">
+            <table:column id="c_com_daiyida_api_domain_capital_Capital_password" property="password" z="NY2qsJztB1oqiH8aGno27E9K9g4="/>
+            <table:column id="c_com_daiyida_api_domain_capital_Capital_userId" property="userId" z="dA3ElXCSWxvl5Y85yZemGTxZSpU="/>
+            <table:column id="c_com_daiyida_api_domain_capital_Capital_fund" property="fund" z="vIibMoKYiLf5pcIfse26oeZNW/k="/>
+            <table:column id="c_com_daiyida_api_domain_capital_Capital_status" property="status" z="2kVsojg1ZkyGEtRXsi/UW1ksEWE="/>
+        </table:table>
+    </page:list>
+</div>

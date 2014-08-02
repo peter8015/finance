@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_daiyida_api_domain_account_Account" object="${account}" path="/accounts" z="4yp9lAcsK2k67IKfTACHv4+67Vg=">
+        <field:display field="userName" id="s_com_daiyida_api_domain_account_Account_userName" object="${account}" z="60vBCM0vlqIEmBbQIZR8xgrESfY="/>
+        <field:display field="phoneNum" id="s_com_daiyida_api_domain_account_Account_phoneNum" object="${account}" z="oXoWscoH3MIX4U59PyBALVv6uP0="/>
+        <field:display field="password" id="s_com_daiyida_api_domain_account_Account_password" object="${account}" z="waDX5j8qczdzV7BdTUD1wy34u38="/>
+        <field:display field="status" id="s_com_daiyida_api_domain_account_Account_status" object="${account}" z="Y3AHNycMagjtBTNKVHKoQGI7y6I="/>
+        <field:display field="realName" id="s_com_daiyida_api_domain_account_Account_realName" object="${account}" z="WzzX241Np6AGCHWXPyEjJRA1KTw="/>
+        <field:display date="true" dateTimePattern="${account_createtime_date_format}" field="createTime" id="s_com_daiyida_api_domain_account_Account_createTime" object="${account}" z="Wf1iSqtWXRsstqvxqCzW04XqBIc="/>
+        <field:display field="roles" id="s_com_daiyida_api_domain_account_Account_roles" object="${account}" z="rwBwMgU3bMfSaaPtTjhgPBiuBWs="/>
+    </page:show>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_daiyida_api_domain_account_Account" modelAttribute="account" path="/accounts" versionField="Version" z="w6PRZYhbkCInbsA1qyKoUKEXgLE=">
+        <field:textarea field="userName" id="c_com_daiyida_api_domain_account_Account_userName" required="true" z="TPdbYdQ0FmwCyjRpi1P9MQrnGiE="/>
+        <field:textarea field="phoneNum" id="c_com_daiyida_api_domain_account_Account_phoneNum" required="true" z="NpE4emRgM6Xxbbj39EQq3E9HNmU="/>
+        <field:input field="password" id="c_com_daiyida_api_domain_account_Account_password" required="true" z="j8qxfmVRgW3D9zQdP+IXYFW5jKY="/>
+        <field:input field="status" id="c_com_daiyida_api_domain_account_Account_status" required="true" z="3lznVb/t6d9i2dSSgH2fN3pfGH8="/>
+        <field:input field="realName" id="c_com_daiyida_api_domain_account_Account_realName" required="true" z="8w/vlFukQyrqkg9D/DHnlFZHKZ8="/>
+        <field:datetime dateTimePattern="${account_createtime_date_format}" field="createTime" id="c_com_daiyida_api_domain_account_Account_createTime" z="rqcmmpfO3xPcxQAdZhUCtX+Srng="/>
+        <field:select field="roles" id="c_com_daiyida_api_domain_account_Account_roles" itemValue="id" items="${roles}" multiple="true" path="/role" z="rSqZH0pRMUklRv+dgiH3f5YSF8U="/>
+    </form:update>
+</div>

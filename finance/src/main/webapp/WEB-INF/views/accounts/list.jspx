@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_daiyida_api_domain_account_Account" items="${accounts}" z="O06wqk9x4XNd7FWs8QUKpRfJDis=">
+        <table:table data="${accounts}" id="l_com_daiyida_api_domain_account_Account" path="/accounts" z="dN4TiPsp0dpv30ffGpyP/o1+Seo=">
+            <table:column id="c_com_daiyida_api_domain_account_Account_userName" property="userName" z="WSlVD+0jmn+juhHdUH3GJ5A5mdM="/>
+            <table:column id="c_com_daiyida_api_domain_account_Account_phoneNum" property="phoneNum" z="SowqE94NTYszt8+QEiVKIJ7OqdI="/>
+            <table:column id="c_com_daiyida_api_domain_account_Account_password" property="password" z="87Ivg+EO7J1giDmLYLORnt3b2qo="/>
+            <table:column id="c_com_daiyida_api_domain_account_Account_status" property="status" z="XpwHimfBxT+qPsQnCJrTCThjMsQ="/>
+            <table:column id="c_com_daiyida_api_domain_account_Account_realName" property="realName" z="Q9rvDwF1aFhte/XJQMrTYNOK1jw="/>
+            <table:column date="true" dateTimePattern="${account_createtime_date_format}" id="c_com_daiyida_api_domain_account_Account_createTime" property="createTime" z="e2q2xcfGGVYo4+fVB+9nUTHzyeA="/>
+        </table:table>
+    </page:list>
+</div>

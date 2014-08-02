@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_daiyida_api_domain_role_Role" object="${role}" path="/role" z="7IcqpRWIDCQMh0/dIIEvWGfO1Vs=">
+        <field:display field="name" id="s_com_daiyida_api_domain_role_Role_name" object="${role}" z="UPmPIMNgJtBzmgSS8MLdiJ8nWZ8="/>
+        <field:display field="sortNumber" id="s_com_daiyida_api_domain_role_Role_sortNumber" object="${role}" z="7uantE6If5hkz4YrTeuCQshbNsk="/>
+        <field:display field="resources" id="s_com_daiyida_api_domain_role_Role_resources" object="${role}" z="e8gYt+9Tch+y4caG+lyvqfd+hws="/>
+    </page:show>
+</div>

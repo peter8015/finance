@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_daiyida_api_domain_capital_Capital" object="${capital}" path="/capital" z="/BEOkWhHjBPwKkfWiHfGl57FNMA=">
+        <field:display field="password" id="s_com_daiyida_api_domain_capital_Capital_password" object="${capital}" z="RvndybpvrZ0Ck4WRdYrejD9XpOs="/>
+        <field:display field="userId" id="s_com_daiyida_api_domain_capital_Capital_userId" object="${capital}" z="zKq2ceS4Up0QWeM2io+cl4noWLQ="/>
+        <field:display field="fund" id="s_com_daiyida_api_domain_capital_Capital_fund" object="${capital}" z="8WXiiCnMmU7IsRZcU4QB/kaDW3A="/>
+        <field:display field="status" id="s_com_daiyida_api_domain_capital_Capital_status" object="${capital}" z="HEBpjfYSEQe/p51KmNK0OiigdX0="/>
+    </page:show>
+</div>

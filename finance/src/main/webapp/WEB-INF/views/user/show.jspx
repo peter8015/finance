@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_daiyida_api_domain_user_User" object="${user}" path="/user" z="k9M3GBTv5jnnZJO6K2JkyMJmKmk=">
+        <field:display field="loginName" id="s_com_daiyida_api_domain_user_User_loginName" object="${user}" z="KvBxyY3DKtCBsbBUswwXRoHUtRw="/>
+        <field:display field="email" id="s_com_daiyida_api_domain_user_User_email" object="${user}" z="Iy9KN0yPia69KJFbTzyzHpd1xCE="/>
+        <field:display field="password" id="s_com_daiyida_api_domain_user_User_password" object="${user}" z="0sRIPvBE4PTh2HNcR56mOHYCkSY="/>
+        <field:display field="userName" id="s_com_daiyida_api_domain_user_User_userName" object="${user}" z="PQLP7T5AiU5/+/I07MimjoJlUQ8="/>
+        <field:display field="city" id="s_com_daiyida_api_domain_user_User_city" object="${user}" z="zBIBETMbHCe8A5PcjO9EF6n/718="/>
+        <field:display field="fundAccount" id="s_com_daiyida_api_domain_user_User_fundAccount" object="${user}" z="kweKDN5FFfTv/Avnsz8ChVj0wfk="/>
+        <field:display field="roles" id="s_com_daiyida_api_domain_user_User_roles" object="${user}" z="qS2pouICWTXuKscgr0StSyC2z9s="/>
+        <field:display field="phone" id="s_com_daiyida_api_domain_user_User_phone" object="${user}" z="rylBDMfsFHtrUeHe7guKfb9m9ro="/>
+    </page:show>
+</div>

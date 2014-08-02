@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_daiyida_api_domain_customer_Customer" items="${customers}" z="fgPm3QeRW86eYl6Vob5ciwf9/e0=">
+        <table:table data="${customers}" id="l_com_daiyida_api_domain_customer_Customer" path="/customers" z="UBJwUDcpTe1KxKeDJfw0nLx7L+0=">
+            <table:column id="c_com_daiyida_api_domain_customer_Customer_userId" property="userId" z="Tug2EAPBJVld+zHfTcZkdV/L4Tc="/>
+            <table:column id="c_com_daiyida_api_domain_customer_Customer_idCard" property="idCard" z="BjY1OSFqB6Xfy3IlRpspr0OGCqU="/>
+            <table:column id="c_com_daiyida_api_domain_customer_Customer_name" property="name" z="1rgE85Qz3WdRfR/G/ufUXGM3T6Q="/>
+            <table:column date="true" dateTimePattern="${customer_birthday_date_format}" id="c_com_daiyida_api_domain_customer_Customer_birthday" property="birthday" z="rMdGjWdDUtDwHp5Ccha7y37ngig="/>
+            <table:column id="c_com_daiyida_api_domain_customer_Customer_sex" property="sex" z="p+iCnlAGxDm5QThhK1dDLc9PTso="/>
+            <table:column date="true" dateTimePattern="${customer_createtime_date_format}" id="c_com_daiyida_api_domain_customer_Customer_createTime" property="createTime" z="pZ28bMwmm1BdVxRyh4VYmoyKBBA="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_daiyida_api_domain_user_User" items="${users}" z="e+a9sBb6kEYnUKM4XKboDCc23Hk=">
+        <table:table data="${users}" id="l_com_daiyida_api_domain_user_User" path="/user" z="v5Ed6SYBVp0CiNJRwFqlfpOKh9U=">
+            <table:column id="c_com_daiyida_api_domain_user_User_loginName" property="loginName" z="8WKnGUfPUG2yG74zlSmZefK4M8M="/>
+            <table:column id="c_com_daiyida_api_domain_user_User_email" property="email" z="UqQ8X45Y88xQRoUFaLQY8BLQGt0="/>
+            <table:column id="c_com_daiyida_api_domain_user_User_password" property="password" z="6GBCMLOBGTaJOCG+uM6dVoi2Dv0="/>
+            <table:column id="c_com_daiyida_api_domain_user_User_userName" property="userName" z="Jnkuf1aMjt6GEl6N+11EcgyOwEw="/>
+            <table:column id="c_com_daiyida_api_domain_user_User_city" property="city" z="0XdsGhCNBVgfYIeLQEI+jw8EGL8="/>
+            <table:column id="c_com_daiyida_api_domain_user_User_phone" property="phone" z="7kWNdZn1fwaH+jTjNj/YWxvyDBo="/>
+        </table:table>
+    </page:list>
+</div>

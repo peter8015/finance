@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_production" z="lp++awgTEBC8DtG6Zwe8nXO0Ixc=">
+            <menu:item id="i_production_new" messageCode="global_menu_new" url="/productions?form" z="4TllNg60+zLj0vbz3tPdKlvT8WY="/>
+            <menu:item id="i_production_list" messageCode="global_menu_list" url="/productions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="GIzoD+EMJ0Y/q2SuiyU6KMVLwI8="/>
+        </menu:category>
+        <menu:category id="c_resource" z="QccBeAQCWbFlycIXkFVzmR8srU0=">
+            <menu:item id="i_resource_new" messageCode="global_menu_new" url="/resources?form" z="F3oI3tJDA/wuL+veUMAjUDRDeog="/>
+            <menu:item id="i_resource_list" messageCode="global_menu_list" url="/resources?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ZL5DxNGlBKsVWtUkvdhfo6CYoIQ="/>
+        </menu:category>
+        <menu:category id="c_role" z="LPygIx2EuEArCzqsfpQQev0lHyc=">
+            <menu:item id="i_role_new" messageCode="global_menu_new" url="/role?form" z="user-managed"/>
+            <menu:item id="i_role_list" messageCode="global_menu_list" url="/role?page=1&amp;size=${empty param.size ? 10 : param.size}" z="user-managed"/>
+        </menu:category>
+        <menu:category id="c_user" z="uoTSf/uIZ821ZppidzS9aO776yk=">
+            <menu:item id="i_user_new" messageCode="global_menu_new" url="/user?form" z="user-managed"/>
+            <menu:item id="i_user_list" messageCode="global_menu_list" url="/user?page=1&amp;size=${empty param.size ? 10 : param.size}" z="user-managed"/>
+        </menu:category>
+        <menu:category id="c_capitalaccount" z="UIcztCipCgcjKxkFOld+VpXwy1k=">
+            <menu:item id="i_capitalaccount_new" messageCode="global_menu_new" url="/capitalaccounts?form" z="IAGnaDkrp0934R6TGO/nA4Yzlw0="/>
+            <menu:item id="i_capitalaccount_list" messageCode="global_menu_list" url="/capitalaccounts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="LflMKKEmAIPdfXZiv0g7gdAEWl0="/>
+        </menu:category>
+        <menu:category id="c_bankcard" z="RkvcXVi9pPYa40B5nQyz6jaL/ak=">
+            <menu:item id="i_bankcard_new" messageCode="global_menu_new" url="/bankcards?form" z="ImTCI+O+J2cCxSVO8VtJ47uUBPY="/>
+            <menu:item id="i_bankcard_list" messageCode="global_menu_list" url="/bankcards?page=1&amp;size=${empty param.size ? 10 : param.size}" z="/gpWxn2ri8Bzs2q94as67x2hWeo="/>
+        </menu:category>
+        <menu:category id="c_capital" z="PisrYXFiwSzZxyF+/AMNaPyBeEA=">
+            <menu:item id="i_capital_new" messageCode="global_menu_new" url="/capital?form" z="olY+b2AkKfdpMMVIUUcp6zBseds="/>
+            <menu:item id="i_capital_list" messageCode="global_menu_list" url="/capital?page=1&amp;size=${empty param.size ? 10 : param.size}" z="yDs/jdbiXYt9oFdgxlbr85+g6y4="/>
+        </menu:category>
+        <menu:category id="c_customer" z="Wa+bVSiDyYo/wX1nGU1B/z+OKhE=">
+            <menu:item id="i_customer_new" messageCode="global_menu_new" url="/customers?form" z="d9+YIotZHp6KZLGKwwnMVzPvh8k="/>
+            <menu:item id="i_customer_list" messageCode="global_menu_list" url="/customers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Yo9cUtyc7EUvbxwQ7EoeqXWaVJM="/>
+        </menu:category>
+        <menu:category id="c_account" z="/ObionklNVMvfxU5oSj2hEUJNu0=">
+            <menu:item id="i_account_new" messageCode="global_menu_new" url="/accounts?form" z="7ISq6pJsfrDJexgk1yAmzNiIcp8="/>
+            <menu:item id="i_account_list" messageCode="global_menu_list" url="/accounts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="VeXZsM9n5bR9ZvhjdYhrVsG24uw="/>
+        </menu:category>
+    </menu:menu>
+</div>

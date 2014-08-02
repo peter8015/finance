@@ -1,0 +1,73 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+//AJAX方法, 被自定义封装在该函数中
+function ajaxFunction( url )
+{
+ var xmlHttp;
+
+ try
+ {
+// Firefox, Opera 8.0+, Safari
+xmlHttp = new XMLHttpRequest();    // 实例化对象
+ }
+ catch( e )
+ {
+  // Internet Explorer
+  try
+  {
+   xmlHttp = new ActiveXObject( "Msxml2.XMLHTTP" );
+  }
+  catch ( e )
+  {
+   try
+   {
+    xmlHttp = new ActiveXObject( "Microsoft.XMLHTTP" );
+   }
+   catch( e )
+   {
+    alert("您的浏览器不支持AJAX！");
+    return false;
+   }
+  }
+ }
+
+ xmlHttp.onreadystatechange = function()
+ {
+  if( xmlHttp.readyState == 4  && xmlHttp.status == 200 )
+  {
+   alert(xmlHttp.responseText);
+  }
+ }
+ xmlHttp.open( "GET", url, true );
+ xmlHttp.send( null );
+
+}
+
+function chg()
+{
+ 
+  //alert( value );
+  ajaxFunction( './productions?page=1&amp;size=10' );
+ 
+}
+
+chg();
+
+</script>
+</head>
+<body>
+产品列表信息
+
+
+
+  
+    
+</body>
+</html>

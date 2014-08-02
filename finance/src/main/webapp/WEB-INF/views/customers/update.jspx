@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_daiyida_api_domain_customer_Customer" modelAttribute="customer" path="/customers" versionField="Version" z="vCN4IYaf9aIrr2LpmbHrzVhTcSs=">
+        <field:input field="userId" id="c_com_daiyida_api_domain_customer_Customer_userId" required="true" z="pHx7mDCnkwBhq8fqefGSKYQKrAI="/>
+        <field:input field="idCard" id="c_com_daiyida_api_domain_customer_Customer_idCard" required="true" z="rz4p23zLlWL9edoz+oNVqBxefX4="/>
+        <field:textarea field="name" id="c_com_daiyida_api_domain_customer_Customer_name" required="true" z="pY1dbcIXUSb4+NkLuBwevZoJn4o="/>
+        <field:datetime dateTimePattern="${customer_birthday_date_format}" field="birthday" id="c_com_daiyida_api_domain_customer_Customer_birthday" z="YZ38QVbSUUy0X/KYcoMOyXhVMDY="/>
+        <field:input field="sex" id="c_com_daiyida_api_domain_customer_Customer_sex" z="a7qGGmU5xkpHvwWcVpI5GGkc0/M="/>
+        <field:datetime dateTimePattern="${customer_createtime_date_format}" field="createTime" id="c_com_daiyida_api_domain_customer_Customer_createTime" z="XLl9bvXyXomV00cOD6QMeC3UPGY="/>
+        <field:datetime dateTimePattern="${customer_modifytime_date_format}" field="modifyTime" id="c_com_daiyida_api_domain_customer_Customer_modifyTime" z="BOP7ZLPfqlKtIC5F/vZBmrFAlI4="/>
+    </form:update>
+</div>

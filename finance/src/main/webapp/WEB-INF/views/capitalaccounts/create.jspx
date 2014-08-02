@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_daiyida_api_domain_capitalaccount_CapitalAccount" modelAttribute="capitalAccount" path="/capitalaccounts" render="${empty dependencies}" z="ft5MeDnb0xqfPHYqmzLLkGAZs/o=">
+        <field:input field="password" id="c_com_daiyida_api_domain_capitalaccount_CapitalAccount_password" required="true" z="4+2CNClQZiEzVlP/JvfUgMWzDuw="/>
+        <field:input field="userId" id="c_com_daiyida_api_domain_capitalaccount_CapitalAccount_userId" required="true" z="XQgY/YMzJ7JkByf08ndTN0UVxik="/>
+        <field:input field="id" id="c_com_daiyida_api_domain_capitalaccount_CapitalAccount_id" required="true" z="hAfEa56VctsEdM3rkpe/HGUPnIw="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_daiyida_api_domain_capitalaccount_CapitalAccount" render="${not empty dependencies}" z="rs+gmevZ69869XERsCkO3bBSvEc="/>
+</div>

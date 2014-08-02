@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security" 
+    xmlns:beans="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+    <!-- HTTP security configurations -->
+    <http auto-config="true" use-expressions="true">
+        <form-login login-processing-url="/resources/j_spring_security_check" login-page="/login" authentication-failure-url="/login?login_error=t" default-target-url="/index"/>
+        <logout logout-url="/resources/j_spring_security_logout" />
+        <!-- Configure these elements to secure URIs in your application -->    
+        <intercept-url pattern="/member/**" access="isAuthenticated()" />
+        <intercept-url pattern="/resources/**" access="permitAll" />
+        <intercept-url pattern="/login/**" access="permitAll" />
+       
+         <intercept-url pattern="/exception/**" access="permitAll" requires-channel="http"/>
+         <intercept-url pattern="/**" access="isAuthenticated()" />
+       <!--  <custom-filter ref="securityFilter" after="FILTER_SECURITY_INTERCEPTOR"/> 开发期间不做拦截-->
+    </http>
+    <!-- Configure Authentication mechanism 
+    <authentication-manager alias="authenticationManager">
+        
+        <authentication-provider>
+            <password-encoder hash="sha-256" />
+            <user-service>
+                <user name="admin" password="8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918" authorities="ROLE_ADMIN" />
+                <user name="user" password="04f8996da763b7a969b1028ee3007569eaf3a635486ddab211d512c85b9df8fb" authorities="ROLE_USER" />
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+    
+   -->
+   
+   
+  
+      
+ 	<beans:bean id="passwordEncoder" class="org.springframework.security.authentication.encoding.PlaintextPasswordEncoder" />
+ 	<beans:bean id="userDetailService" class="com.daiyida.api.security.UserdetailsServiceImpl"/>
+    <beans:bean id="authenticationProvider" class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
+    	<beans:property name="hideUserNotFoundExceptions" value="false"/>
+    	<beans:property name="userDetailsService" ref="userDetailService"/>
+    	<beans:property name="passwordEncoder" ref="passwordEncoder"/>
+    </beans:bean>
+    <beans:bean id="securityMetadataSource" class="com.daiyida.api.security.DydInvocationSecurityMetadataSource">
+    </beans:bean>
+    <beans:bean id="accessDecisionManager" class="com.daiyida.api.security.DydAccessDecisionManager"/>
+	
+	<beans:bean id="securityFilter" class="com.daiyida.api.security.SecurityInterceptorFilter">
+		<beans:property name="authenticationManager" ref="authenticationManager"/>
+		<beans:property name="securityMetadataSource" ref="securityMetadataSource"/>
+		<beans:property name="accessDecisionManager" ref="accessDecisionManager"/>
+	</beans:bean>
+	
+    <!-- Configure Authentication mechanism -->
+    <authentication-manager alias="authenticationManager">
+       <authentication-provider ref="authenticationProvider"/>
+    </authentication-manager>
+	
+</beans:beans>

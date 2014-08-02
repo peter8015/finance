@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_daiyida_api_domain_capitalaccount_CapitalAccount" items="${capitalaccounts}" z="dY7ij69oxCufxx4W7p6UnPMSFr8=">
+        <table:table data="${capitalaccounts}" id="l_com_daiyida_api_domain_capitalaccount_CapitalAccount" path="/capitalaccounts" z="oQ/sRkdJpkAqJBy34rHh6OIMxgA=">
+            <table:column id="c_com_daiyida_api_domain_capitalaccount_CapitalAccount_password" property="password" z="Nq3bfCI47EnM/TQOx51pyvui4jc="/>
+            <table:column id="c_com_daiyida_api_domain_capitalaccount_CapitalAccount_userId" property="userId" z="xrIluhrCjniYttytJJQa/9H7QpU="/>
+        </table:table>
+    </page:list>
+</div>

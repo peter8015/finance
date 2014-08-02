@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_daiyida_api_domain_bankcard_BankCard" object="${bankcard}" path="/bankcards" z="v4JD8waH/uQvMHAVGNhhNf5JIn8=">
+        <field:display field="realName" id="s_com_daiyida_api_domain_bankcard_BankCard_realName" object="${bankcard}" z="N8xieYaNWdQlg+t5ZG69W5uJ91k="/>
+        <field:display date="true" dateTimePattern="${bankCard_bindtime_date_format}" field="bindTime" id="s_com_daiyida_api_domain_bankcard_BankCard_bindTime" object="${bankcard}" z="yC0NfCPpN6Ir1Bau9dGI6KyA39E="/>
+        <field:display field="bankCardNum" id="s_com_daiyida_api_domain_bankcard_BankCard_bankCardNum" object="${bankcard}" z="9IRgDpn5rUotdDpxEBHQ8BpCkYc="/>
+        <field:display field="idCardNum" id="s_com_daiyida_api_domain_bankcard_BankCard_idCardNum" object="${bankcard}" z="w7beNTJbZkma5oPM5Cz43LDiNlw="/>
+        <field:display field="status" id="s_com_daiyida_api_domain_bankcard_BankCard_status" object="${bankcard}" z="g2IZPnfZKJRL8KAs2pWElHonBpw="/>
+        <field:display field="userId" id="s_com_daiyida_api_domain_bankcard_BankCard_UserId" object="${bankcard}" z="Vzjdd3a1Ua19BmV9V0DYd6SnIeM="/>
+    </page:show>
+</div>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_daiyida_api_domain_resource_Resource" modelAttribute="resource" path="/resources" versionField="Version" z="IoZs+DcbdHrrWt8EVmLETNU2f2g=">
+        <field:input field="name" id="c_com_daiyida_api_domain_resource_Resource_name" required="true" z="WTz8F3JF2oSCu0Gbx2mOMRkeAv8="/>
+        <field:input field="url" id="c_com_daiyida_api_domain_resource_Resource_url" required="true" z="/s/Oaz2mBKz1gVtxXNRW6Pmfl4Q="/>
+    </form:update>
+</div>

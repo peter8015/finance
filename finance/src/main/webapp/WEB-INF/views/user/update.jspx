@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_daiyida_api_domain_user_User" modelAttribute="user" path="/user" versionField="Version" z="P/Tqms/9cppiGBxu4MQ3OLFhnWw=">
+        <field:textarea field="loginName" id="c_com_daiyida_api_domain_user_User_loginName" required="true" z="6KXzoneIbPRGLwxxr0y3PAEwIN8="/>
+        <field:textarea field="email" id="c_com_daiyida_api_domain_user_User_email" required="true" validationMessageCode="field_invalid_email" z="0SWIYNW+w36QmCwelDUCNXfT64Q="/>
+        <field:input field="password" id="c_com_daiyida_api_domain_user_User_password" required="true" z="9STCjFbXc7BOv+SlEOboD/8eRts="/>
+        <field:textarea field="userName" id="c_com_daiyida_api_domain_user_User_userName" required="true" z="K1uYZplwNkeYCctZ9UIiOoX5dEc="/>
+        <field:textarea field="city" id="c_com_daiyida_api_domain_user_User_city" required="true" z="q8ci9n/411gaf3DA6WpfdaUSXas="/>
+        <field:input field="fundAccount" id="c_com_daiyida_api_domain_user_User_fundAccount" required="true" z="ce7PMAoDSi5Q4PSrMDSkyqbsOKo="/>
+        <field:select field="roles" id="c_com_daiyida_api_domain_user_User_roles" itemValue="id" items="${roles}" multiple="true" path="/role" z="eS6xVa2pHe2BcR9+fG+4KdzGE5c="/>
+        <field:textarea field="phone" id="c_com_daiyida_api_domain_user_User_phone" required="true" z="e1e7e6PYI2mRx1PugCaviqvwAS0="/>
+    </form:update>
+</div>

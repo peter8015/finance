@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_daiyida_api_domain_production_Production" object="${production}" path="/productions" z="FP1WT+9d9p2/2xmWtLOau3NUb2U=">
+        <field:display field="name" id="s_com_daiyida_api_domain_production_Production_name" object="${production}" z="JMLEHR4Zt7LrurX/TR+F42J7xfs="/>
+        <field:display field="description" id="s_com_daiyida_api_domain_production_Production_description" object="${production}" z="bm2+quDeRtGvBaulY96oatJ58h0="/>
+    </page:show>
+</div>

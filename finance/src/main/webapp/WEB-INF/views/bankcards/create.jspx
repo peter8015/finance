@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_daiyida_api_domain_bankcard_BankCard" modelAttribute="bankCard" path="/bankcards" render="${empty dependencies}" z="4ZTnh9P84gCQaxkFSAXDky9bilk=">
+        <field:input field="realName" id="c_com_daiyida_api_domain_bankcard_BankCard_realName" required="true" z="kKrkbUhNnm8ceVuvxOS4doyFOFM="/>
+        <field:datetime dateTimePattern="${bankCard_bindtime_date_format}" field="bindTime" id="c_com_daiyida_api_domain_bankcard_BankCard_bindTime" z="qySpGR4ms/F20twivi8pwk7EHIc="/>
+        <field:textarea field="bankCardNum" id="c_com_daiyida_api_domain_bankcard_BankCard_bankCardNum" required="true" z="9x68Fa7Vw+s05XhcF/Ya6+ZuciY="/>
+        <field:textarea field="idCardNum" id="c_com_daiyida_api_domain_bankcard_BankCard_idCardNum" required="true" z="yTZX0aRqUGWriDbrZl/K5KJxXbs="/>
+        <field:input field="status" id="c_com_daiyida_api_domain_bankcard_BankCard_status" required="true" z="oWD99o/NRAukbAPlSM8dYUPg05g="/>
+        <field:input field="UserId" id="c_com_daiyida_api_domain_bankcard_BankCard_UserId" required="true" z="euSET3MvfP/uTRoivbL2QtDkIjI="/>
+        <field:input field="id" id="c_com_daiyida_api_domain_bankcard_BankCard_id" required="true" z="+mlgIFozCXn5ijNpJ51uNyhYJ9k="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_daiyida_api_domain_bankcard_BankCard" render="${not empty dependencies}" z="x4ejBf8Q1aHyoqP9i2140OQhLFw="/>
+</div>
